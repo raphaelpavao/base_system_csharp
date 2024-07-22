@@ -1,0 +1,15 @@
+@using WebApplication1.Enums
+@model UsuarioModel
+
+@{
+    ViewData["Title"] = "Apagar usuário";
+}
+
+<div class="text-center">
+    <h3>Confirma a exclusão do usuário?</h3>
+
+    <a class="btn btn-primary" asp-controller="Usuario" asp-action="Index" role="button">Não</a>
+    <a class="btn btn-danger" asp-controller="Usuario" asp-route-id="@Model.Id" asp-action="Apagar" role="button">Sim</a>
+
+</div>
+
